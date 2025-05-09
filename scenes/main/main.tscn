@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dsbgvejg1germ"]
+
+[ext_resource type="Texture2D" uid="uid://dvodwlkn8gfnf" path="res://assets/sprites/background.png" id="1_hyk8p"]
+[ext_resource type="PackedScene" uid="uid://rsojg8tu14dx" path="res://scenes/asteroids/big_asteorid.tscn" id="2_iuonh"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(622, 314)
+texture = ExtResource("1_hyk8p")
+
+[node name="BigAsteroid" parent="." instance=ExtResource("2_iuonh")]
+position = Vector2(1424, 162)
